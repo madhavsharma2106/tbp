@@ -13,22 +13,26 @@
 
 <body class="home">
     <section id="landing-container">
-        <header class="container flex sb">
-            <nav class="flex sb">
+    <header class="container flex sb">
+        <nav class="flex sb">
                 <p>
-                    <a href="#">SERVICES</a>
+                    <a href="index.php">HOME</a>
                 </p>
                 <p>
-                    <a href="#">TEAM</a>
+                    <a href="services.php">SERVICES</a>
                 </p>
                 <p>
-                    <a href="#">WORK</a>
+                    <a href="team.php">TEAM</a>
                 </p>
                 <p>
-                    <a href="#">CONTACT</a>
+                    <a href="work.php">WORK</a>
+                </p>
+                
+                <p>
+                    <a href="#contact-container">CONTACT</a>
                 </p>
             </nav>
-            <img class="pointer" src="./assets/home/logo-header.svg" alt="logo">
+            <a href="index.php"> <img class="pointer" src="./assets/home/logo-header.svg" alt="logo"></a>
         </header>
         <div class="container">
             <div class="info white">
@@ -95,7 +99,8 @@
                 <h2>CORPORATE WORKSHOP</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae deleniti
                     laboriosam, aperiam labore asperiores quaerat in facere? Sunt error itaque illo officiis, dolor est eos
-                    ad.</p>
+                    ad.
+                </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae delenit
                     <a href="#">LEARN MORE</a>
                 </p>
@@ -108,7 +113,8 @@
                 <h2>VIDEO PRODUCTION</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae deleniti
                     laboriosam, aperiam labore asperiores quaerat in facere? Sunt error itaque illo officiis, dolor est eos
-                    ad.</p>
+                    ad.
+                </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae delenit
                     <a href="#">LEARN MORE</a>
                 </p>
@@ -128,7 +134,8 @@
                 <h2>CORPORATE EVENTS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae deleniti
                     laboriosam, aperiam labore asperiores quaerat in facere? Sunt error itaque illo officiis, dolor est eos
-                    ad.</p>
+                    ad.
+                </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis vero temporibus repudiandae delenit
                     <a href="#">LEARN MORE</a>
                 </p>
@@ -191,7 +198,9 @@
                     </div>
                 </div>
                 <div class="form-area">
-                    <form action="">
+                    <form action="/gdform.php" method="post">
+                        <input type="hidden" name="subject" value="Form Submission" />
+                        <input type="hidden" name="redirect" value="#" />
                         <input type="text" placeholder="Name" name="name">
                         <input type="text" placeholder="E-Mail" name="email">
                         <input type="text" placeholder="Subject" name="subject">
@@ -204,7 +213,7 @@
         </div>
 
     </section>
-    <footer class="container flex">
+    <footer id="footer" class="container flex">
         <div class="data-column">
             <h2>Company</h2>
             <p>

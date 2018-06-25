@@ -13,14 +13,26 @@
 
 <body class="team-html">
     <section id="landing-container">
-        <header class="container flex sb">
-            <nav class="flex sb">
-                <p>SERVICES</p>
-                <p>TEAM</p>
-                <p>WORK</p>
-                <p>CONTACT</p>
+    <header class="container flex sb">
+        <nav class="flex sb">
+                <p>
+                    <a href="index.php">HOME</a>
+                </p>
+                <p>
+                    <a href="services.php">SERVICES</a>
+                </p>
+                <p>
+                    <a href="team.php">TEAM</a>
+                </p>
+                <p>
+                    <a href="work.php">WORK</a>
+                </p>
+                
+                <p>
+                    <a href="#contact-container">CONTACT</a>
+                </p>
             </nav>
-            <img class="pointer" src="./assets/home/logo-header.svg" alt="logo">
+            <a href="index.php"> <img class="pointer" src="./assets/home/logo-header.svg" alt="logo"></a>
         </header>
                 <img class="dots-image-1" src="assets/team/dots-line-02.svg">
                 <div class="container flex">
@@ -103,7 +115,9 @@
                     </div>
                 </div>
                 <div class="form-area">
-                    <form action="">
+                    <form action="/gdform.php" method="post">
+                        <input type="hidden" name="subject" value="Form Submission" />
+                        <input type="hidden" name="redirect" value="#" />
                         <input type="text" placeholder="Name" name="name">
                         <input type="text" placeholder="E-Mail" name="email">
                         <input type="text" placeholder="Subject" name="subject">
@@ -116,7 +130,7 @@
         </div>
 
     </section>
-    <footer class="container flex">
+    <footer id="footer" class="container flex">
         <div class="data-column">
             <h2>Company</h2>
             <p>
